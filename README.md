@@ -5,15 +5,16 @@ This script map pdb ID with chain ID in the input formats of 1) tab-delimited ta
 
 
 1) csv
-
+````
 python pdb2uniprot_tam.py --input pdb_chain_table.csv --pdb_col PDB_ID --chain_col CHAIN_ID
-
+````
 
 2) tab-delimited table (with header in output)
-
+````
 python pdb2uniprot_tam.py --input pdb_chain_table
-
+````
 
 3) tab-delimited table (no header in output)
-
+````
 python pdb2uniprot_tam.py --input pdb_chain_table --no_header
+````
