@@ -1,4 +1,4 @@
-# This script map pdb ID with chain ID in the input formats of 1) tab-delimited table without header OR 2) .csv input to uniprot ID.
+# This script maps pdb ID with chain ID in the input formats of 1) tab-delimited table without header OR 2) .csv input to uniprot ID.
 # Credit to https://github.com/johnnytam100/pdb2uniprot
 
 # Usage examples
