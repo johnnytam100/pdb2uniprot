@@ -12,7 +12,6 @@
 # python pdb2uniprot_tam.py --input pdb_chain_table --no_header
 
 from six.moves.urllib.request import urlopen
-import ast
 import json
 import pandas as pd
 from argparse import ArgumentParser
