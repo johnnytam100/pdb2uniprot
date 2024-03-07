@@ -72,7 +72,7 @@ for pdb, chain in zip(pdb_chain_df['pdb'], pdb_chain_df['chain']):
 
         for mapping in content[pdb.lower()]['UniProt'][uniprot]['mappings']:
 
-            if mapping['chain_id'] == chain.upper():
+            if mapping['chain_id'] == chain:
 
                 result['pdb'].append(pdb)
                 result['chain'].append(chain)
