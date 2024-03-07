@@ -37,7 +37,7 @@ if all([args.pdb_col!=None,
     chain_col = args.chain_col
 
 # load
-if '.csv' in input:
+if input.endswith('.csv'):
 
     csv_df = pd.read_csv(input)
     pdb_chain_df = csv_df[[pdb_col, chain_col]]
@@ -92,7 +92,7 @@ for pdb, chain in zip(pdb_chain_df['pdb'], pdb_chain_df['chain']):
 result_df = pd.DataFrame(result)
 
 # save
-if '.csv' in input:
+if input.endswith('.csv'):
 
     # join
     csv_df.set_index([pdb_col, chain_col], inplace=True)
